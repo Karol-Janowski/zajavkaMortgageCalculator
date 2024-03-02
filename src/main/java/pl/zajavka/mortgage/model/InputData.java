@@ -1,15 +1,9 @@
 package pl.zajavka.mortgage.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.With;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
 import java.util.Map;
-@Getter
-
 
 public class InputData {
 
