@@ -13,5 +13,5 @@ public class MortgageResidual {
 
     private final BigDecimal residualDuration;
 
-    
+
 }
