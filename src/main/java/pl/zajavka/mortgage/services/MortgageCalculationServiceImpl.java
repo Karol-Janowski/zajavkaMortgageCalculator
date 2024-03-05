@@ -1,11 +1,13 @@
 package pl.zajavka.mortgage.services;
 
+import lombok.RequiredArgsConstructor;
 import pl.zajavka.mortgage.model.InputData;
 import pl.zajavka.mortgage.model.Rate;
 import pl.zajavka.mortgage.model.Summary;
 
 import java.util.List;
 
+@RequiredArgsConstructor
 public class MortgageCalculationServiceImpl implements MortgageCalculationService {
 
     private final RateCalculationService rateCalculationService;
@@ -13,16 +15,6 @@ public class MortgageCalculationServiceImpl implements MortgageCalculationServic
     private final PrintingService printingService;
 
     private final SummaryService summaryService;
-
-    public MortgageCalculationServiceImpl(
-        final RateCalculationService rateCalculationService,
-        final PrintingService printingService,
-        final SummaryService summaryService
-    ) {
-        this.rateCalculationService = rateCalculationService;
-        this.printingService = printingService;
-        this.summaryService = summaryService;
-    }
 
     @Override
     public void calculate(InputData inputData) {
